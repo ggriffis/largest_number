@@ -29,6 +29,6 @@ group :test, :development do
   gem 'launchy'
 end
 
-group :production
+group :production do
   gem 'pg'
 end
