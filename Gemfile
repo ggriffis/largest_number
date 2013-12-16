@@ -28,3 +28,7 @@ group :test, :development do
   gem 'pry-debugger'
   gem 'launchy'
 end
+
+group :production
+  gem 'pg'
+end
