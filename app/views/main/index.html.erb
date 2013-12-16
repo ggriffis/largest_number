@@ -1,0 +1,13 @@
+<%= form_tag find_largest_number_path, method: "get" do  %>
+  <%= label_tag :numbers, "Enter a space-delimited list of numbers" %><br>
+  <%= text_field_tag :numbers, @numbers, size: 200, placeholder: "eg 8 752 30 12 2 1738 882 36" %>
+  <div>
+    <%= submit_tag "Find Largest Number" %>
+    <% unless @largest_number.nil? %>
+      <div>
+        <%= label_tag :largest_number_is %>
+        <%= @largest_number %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
